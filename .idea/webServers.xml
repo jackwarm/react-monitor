@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="f6dffe81-fc85-494e-9686-c00b801f189f" name="sysmonitor.cieply.com" url="http://sysmonitor.cieply.com">
-        <fileTransfer host="sysmonitor.cieply.com" port="22" privateKey="C:\Users\john\.ssh\jcieply2019openSSH" rootFolder="/data/sites/sysmon/www" accessType="SFTP" keyPair="true">
+        <fileTransfer host="sysmonitor.cieply.com" port="22" privateKey="C:\Users\john\.ssh\jcieply2019openSSH" rootFolder="/data/sites/sysmon/react" accessType="SFTP" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

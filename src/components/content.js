@@ -10,7 +10,7 @@ class Content extends Component {
 
     changeServer = (id) => {
         this.props.changeServer(id);
-    }
+    };
 
     // Display Refresh Request
     render() {
@@ -31,7 +31,8 @@ class Content extends Component {
                 display = <DisplayDisks disks={disks} />;
                 break;
             case "mem":
-                display = <DisplayMemory />;
+                let mem = this.props.currentState.mem;
+                display = <DisplayMemory memory={mem} />;
                 break;
             case "sites":
                 let sites = this.props.currentState.sites;
