@@ -23,10 +23,12 @@ class Content extends Component {
                 display = <DisplayDetails serverId={serverId} hosts={hosts} />;
                 break;
             case "cpu":
-                display = <DisplayCPU />;
+                let cpu = this.props.currentState.cpu;
+                display = <DisplayCPU cpu={cpu}/>;
                 break;
             case "disks":
-                display = <DisplayDisks />;
+                let disks = this.props.currentState.disks;
+                display = <DisplayDisks disks={disks} />;
                 break;
             case "mem":
                 display = <DisplayMemory />;
