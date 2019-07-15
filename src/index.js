@@ -77,6 +77,18 @@ class App extends Component {
                                 />
                             </div>
                         </div>
+                        <div className="row mt-5">
+                            <div className="col-md-12 justify-content-left">
+                                Please excuse the mess... This site is still under development. The current goals for this project are
+                                <ul>
+                                    <li><del>Setup the site to display the usefull information</del></li>
+                                    <li><del>Setup Rest API with the current database</del></li>
+                                    <li>Develop all Rest APIs to get the data needed from the database</li>
+                                    <li>Implement React Visualization components to view the data retrieved</li>
+                                    <li>Work on the css to create a better look and feel for the site.</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </header>
             </div>
