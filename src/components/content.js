@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import DisplayServer from './displayserver'
 import DisplayDetails from './displaydetails'
 import DisplayHosts from './displayhosts'
+import DisplayCPU from './displaycpu'
+import DisplayDisks from './displaydisks'
+import DisplayMemory from './displaymemory'
 
 class Content extends Component {
 
@@ -18,6 +21,15 @@ class Content extends Component {
         switch (option) {
             case "details":
                 display = <DisplayDetails serverId={serverId} hosts={hosts} />;
+                break;
+            case "cpu":
+                display = <DisplayCPU />;
+                break;
+            case "disks":
+                display = <DisplayDisks />;
+                break;
+            case "mem":
+                display = <DisplayMemory />;
                 break;
             case "sites":
                 let sites = this.props.currentState.sites;

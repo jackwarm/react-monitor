@@ -83,6 +83,7 @@ class App extends Component {
                                 <ul>
                                     <li><del>Setup the site to display the usefull information</del></li>
                                     <li><del>Setup Rest API with the current database</del></li>
+                                    <li><del>Create the development file structure</del></li>
                                     <li>Develop all Rest APIs to get the data needed from the database</li>
                                     <li>Implement React Visualization components to view the data retrieved</li>
                                     <li>Work on the css to create a better look and feel for the site.</li>
