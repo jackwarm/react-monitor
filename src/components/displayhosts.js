@@ -3,7 +3,7 @@ import DisplayHostCounts from "./displayhostscounts";
 import DisplayHostsGraph from "./displayhostsgraph";
 import { VictoryBar, VictoryChart,VictoryTheme,VictoryLegend } from 'victory';
 
-const APIurl = 'http://sysmonitor.cieply.com/getOptions.php?opt=get30&url=';
+const APIurl = 'http://sysmonitor.cieply.com/getOptions.php?opt=get30www&url=';
 
 class DisplayHosts extends Component {
     constructor() {
@@ -52,10 +52,10 @@ class DisplayHosts extends Component {
         return (
             <div className='container'>
                 <div className="row">
-                    <div className="col-3 text-black-50 bg-white strong mr-1">Domain</div>
-                    <div className="col-2 text-black-50 bg-white strong mr-1 text-right">Day</div>
-                    <div className="col-2 text-black-50 bg-white strong mr-1 text-right">Week</div>
-                    <div className="col-2 text-black-50 bg-white strong mr-1 text-right">30 Days</div>
+                    <div className="col-3 text-white bg-dark font-weight-bold mr-1">Domain</div>
+                    <div className="col-2 text-white bg-dark font-weight-bold mr-1 text-right">Day</div>
+                    <div className="col-2 text-white bg-dark font-weight-bold mr-1 text-right">Week</div>
+                    <div className="col-2 text-white bg-dark font-weight-bold mr-1 text-right">30 Days</div>
                 </div>
                 {details}
                 <DisplayHostsGraph url={this.state.url}  isOpen={this.state.isOpen} onClose={(e) => this.setState({ isOpen: false })}>

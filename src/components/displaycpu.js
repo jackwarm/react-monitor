@@ -19,12 +19,12 @@ class DisplayCPU extends Component {
         return (
             <div className='container'>
                 <div className="row">
-                    <div className="col-2 text-black-50 bg-white strong mr-1">Interval</div>
-                    <div className="col-2 text-black-50 bg-white strong mr-1 text-right">Load 1</div>
-                    <div className="col-2 text-black-50 bg-white strong mr-1 text-right">Load 5</div>
-                    <div className="col-2 text-black-50 bg-white strong mr-1 text-right">Load 15</div>
-                    <div className="col-1 text-black-50 bg-white strong mr-1 text-right">User</div>
-                    <div className="col-1 text-black-50 bg-white strong mr-1 text-right">Sys</div>
+                    <div className="col-2 text-white bg-dark font-weight-bold mr-1 ">Interval</div>
+                    <div className="col-2 text-white bg-dark font-weight-bold mr-1 text-right">Load 1</div>
+                    <div className="col-2 text-white bg-dark font-weight-bold mr-1 text-right">Load 5</div>
+                    <div className="col-2 text-white bg-dark font-weight-bold mr-1 text-right">Load 15</div>
+                    <div className="col-1 text-white bg-dark font-weight-bold mr-1 text-right">User</div>
+                    <div className="col-1 text-white bg-dark font-weight-bold mr-1 text-right">Sys</div>
                 </div>
                 {details}
             </div>

@@ -6,7 +6,6 @@ class DisplayMemoryCounts extends Component {
     // Display Refresh Request
     render() {
         let memory = this.props.memory;
-        console.log(memory);
         return (
             <div className="row">
                 <div className="col-3 mr-1">

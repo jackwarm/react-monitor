@@ -18,12 +18,12 @@ class DisplayDisks extends Component {
         return (
             <div className='container'>
                 <div className="row">
-                    <div className="col-1 text-black-50 bg-white strong mr-1">Mount</div>
-                    <div className="col-2 text-black-50 bg-white strong mr-1">Device</div>
-                    <div className="col-2 text-black-50 bg-white strong mr-1 text-right">Total</div>
-                    <div className="col-2 text-black-50 bg-white strong mr-1 text-right">Free Space</div>
-                    <div className="col-2 text-black-50 bg-white strong mr-1 text-right">Used Space</div>
-                    <div className="col-1 text-black-50 bg-white strong mr-1 text-right">PCT</div>
+                    <div className="col-1 text-white bg-dark font-weight-bold mr-1">Mount</div>
+                    <div className="col-2 text-white bg-dark font-weight-bold mr-1">Device</div>
+                    <div className="col-2 text-white bg-dark font-weight-bold mr-1 text-right">Total</div>
+                    <div className="col-2 text-white bg-dark font-weight-bold mr-1 text-right">Free Space</div>
+                    <div className="col-2 text-white bg-dark font-weight-bold mr-1 text-right">Used Space</div>
+                    <div className="col-2 text-white bg-dark font-weight-bold mr-1 text-right">PCT</div>
                 </div>
                 {details}
             </div>

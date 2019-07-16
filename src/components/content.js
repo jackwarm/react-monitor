@@ -5,6 +5,7 @@ import DisplayHosts from './displayhosts'
 import DisplayCPU from './displaycpu'
 import DisplayDisks from './displaydisks'
 import DisplayMemory from './displaymemory'
+import DisplaySql from './displaysql'
 
 class Content extends Component {
 
@@ -33,6 +34,11 @@ class Content extends Component {
             case "mem":
                 let mem = this.props.currentState.mem;
                 display = <DisplayMemory memory={mem} />;
+                break;
+            case "sql":
+                let sql = this.props.currentState.sql;
+                let sql30 = this.props.currentState.sql30;
+                display = <DisplaySql sql={sql} serverId={serverId} sql30={sql30} />;
                 break;
             case "sites":
                 let sites = this.props.currentState.sites;

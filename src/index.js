@@ -35,7 +35,22 @@ class App extends Component {
                 let currentState = this.state;
                 currentState[option] = data.response;
                 currentState.option = option;
-                this.setState({currentState});
+                if (option === "sql") {
+                    let table = data.extra;
+                    let data1 = [];
+                    let i = 0;
+                    table.forEach((row => {
+                        let date = row["mdate"];
+                        date = date.substr(5);
+                        data1.push({x:i++ ,
+                            queries:parseInt(row["queries"]),
+                            opens:parseInt(row["opens"]),
+                            qps:parseInt(row["qps_avg"]),
+                            date:date});
+                    }));
+                    currentState["sql30"] = {"data1":data1};
+                }
+                this.setState(currentState);
             });
     }
 
