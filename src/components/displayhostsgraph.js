@@ -3,10 +3,8 @@ import React, { Component } from 'react';
 class DisplayHostsGraph extends Component {
 
     render() {
-        console.log("URL: " + this.props.url + ", show: " + this.props.show);
-
         let dialogStyles = {
-            width: '500px',
+            width: '700px',
             maxWidth: '100%',
             margin: '0 auto',
             position: 'fixed',
