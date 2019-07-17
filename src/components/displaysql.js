@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import DisplaySqlCounts from './displaysqlcounts';
 import { VictoryLine, VictoryChart,VictoryTheme,VictoryLegend,VictoryAxis } from 'victory';
+import DisplayMemory from "./displaymemory";
 
 class DisplaySql extends Component {
 
@@ -86,6 +88,10 @@ class DisplaySql extends Component {
             </div>
         );
     }
+}
+
+DisplayMemory.proptype = {
+    sql: PropTypes.array.isRequired
 }
 
 export default DisplaySql;

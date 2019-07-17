@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import DisplayDisks from "./displaydisks";
 
 class DisplayHostsGraph extends Component {
 
@@ -46,6 +48,11 @@ class DisplayHostsGraph extends Component {
             </div>
         );
     }
+}
+
+DisplayHostsGraph.proptype = {
+    url: PropTypes.string.isRequired,
+    isOpen: PropTypes.bool.isRequired
 }
 
 export default DisplayHostsGraph;

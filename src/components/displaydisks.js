@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import DisplayDiskCounts from "./displaydiskcounts";
+import DisplayDetails from "./displaydetails";
 
 class DisplayDisks extends Component {
 
@@ -29,6 +31,10 @@ class DisplayDisks extends Component {
             </div>
         );
     }
+}
+
+DisplayDisks.proptype = {
+    disks: PropTypes.array.isRequired
 }
 
 export default DisplayDisks;

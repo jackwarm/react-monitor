@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import NumberFormat from "react-number-format";
+import DisplayDisks from "./displaydisks";
 
 class DisplayMemoryCounts extends Component {
 
@@ -25,5 +27,9 @@ class DisplayMemoryCounts extends Component {
     }
 }
 
+DisplayMemoryCounts.proptype = {
+    key: PropTypes.string.isRequired,
+    memory: PropTypes.array.isRequired
+}
 
 export default DisplayMemoryCounts;

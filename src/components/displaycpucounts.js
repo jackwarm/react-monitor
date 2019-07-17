@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import DisplayCPU from "./displaycpu";
 
 class DisplayCPUCounts extends Component {
 
@@ -31,5 +33,9 @@ class DisplayCPUCounts extends Component {
     }
 }
 
+DisplayCPUCounts.propTypes = {
+    key: PropTypes.number.isRequired,
+    cpu: PropTypes.array.isRequired
+}
 
 export default DisplayCPUCounts;

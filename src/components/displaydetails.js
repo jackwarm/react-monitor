@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class DisplayDetails extends Component {
 
@@ -44,6 +45,11 @@ class DisplayDetails extends Component {
             </div>
         );
     }
+}
+
+DisplayDetails.proptype = {
+    serverId: PropTypes.number.isRequired,
+    hosts: PropTypes.object.isRequired
 }
 
 export default DisplayDetails;

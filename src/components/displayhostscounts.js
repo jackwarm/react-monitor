@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import DisplayDisks from "./displaydisks";
 
 class DisplayHostCounts extends Component {
 
@@ -26,6 +28,13 @@ class DisplayHostCounts extends Component {
             </div>
         );
     }
+}
+
+
+DisplayDisks.proptype = {
+    key: PropTypes.string.isRequired,
+    domain: PropTypes.object.isRequired,
+    show30DayGraph: PropTypes.function
 }
 
 export default DisplayHostCounts;

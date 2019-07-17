@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class SideMenu extends Component {
 
@@ -23,4 +24,7 @@ class SideMenu extends Component {
     }
 }
 
+SideMenu.proptype = {
+    goPage: PropTypes.function
+}
 export default SideMenu;

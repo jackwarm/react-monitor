@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import NumberFormat from "react-number-format";
+import DisplayMemoryCounts from "./displaymemorycounts";
 
 class DisplaySqlCounts extends Component {
 
@@ -26,6 +28,11 @@ class DisplaySqlCounts extends Component {
             </div>
         );
     }
+}
+
+DisplayMemoryCounts.proptype = {
+    key: PropTypes.string.isRequired,
+    sql: PropTypes.array.isRequired
 }
 
 export default DisplaySqlCounts;

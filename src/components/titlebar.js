@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 //import { Link } from 'react-router-dom';
 
 class TitleBar extends Component {
@@ -25,6 +26,11 @@ class TitleBar extends Component {
             { serverButton }
         </div>);
     }
+}
+
+TitleBar.proptype = {
+    currentServer: PropTypes.object.isRequired,
+    goMenu: PropTypes.function
 }
 /*
 

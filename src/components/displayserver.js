@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import DisplayDisks from "./displaydisks";
 
 const fiveMinutes = 6 * 60;
 class DisplayServer extends Component {
@@ -24,6 +26,10 @@ class DisplayServer extends Component {
             </div>
         );
     }
+}
+
+DisplayDisks.proptype = {
+    host: PropTypes.array.isRequired
 }
 
 export default DisplayServer;

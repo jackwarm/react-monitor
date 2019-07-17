@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import DisplayServer from './displayserver'
 import DisplayDetails from './displaydetails'
 import DisplayHosts from './displayhosts'
@@ -56,6 +57,11 @@ class Content extends Component {
         }
         return (display);
     }
+}
+
+Content.proptype = {
+    currentState: PropTypes.object.isRequired,
+    changeServer: PropTypes.function
 }
 
 export default Content;

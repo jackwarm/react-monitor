@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import DisplayHostCounts from "./displayhostscounts";
 import DisplayHostsGraph from "./displayhostsgraph";
 import { VictoryBar, VictoryChart,VictoryTheme,VictoryLegend } from 'victory';
+import DisplayDisks from "./displaydisks";
 
 const APIurl = 'http://sysmonitor.cieply.com/getOptions.php?opt=get30www&url=';
 
@@ -86,6 +88,10 @@ class DisplayHosts extends Component {
             </div>
         );
     }
+}
+
+DisplayHosts.proptype = {
+    sites: PropTypes.array.isRequired
 }
 
 export default DisplayHosts;
