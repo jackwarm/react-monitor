@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
+//import { Link } from 'react-router-dom';
 
 class TitleBar extends Component {
     currentServer = {};
 
     changeView = (e) => {
-        this.props.goMenu(this.currentServer.id);
-    }
-
-    goHome = () => {
-        this.props.goMenu(0);
+        this.props.goMenu(parseInt(e.target.id));
     }
 
     // Display Refresh Request
@@ -16,17 +13,23 @@ class TitleBar extends Component {
         this.currentServer = this.props.currentServer;
         let serverButton = "";
         if (this.currentServer.id > 0) {
-            serverButton = <div className="col-3">
-                <button className="btn" onClick={this.changeView}>{this.currentServer.name}</button>
+            serverButton =
+                <div className="col-3">
+                    <button className="btn" onClick={this.changeView} id={this.currentServer.id}>{this.currentServer.name}</button>
                 </div>
         }
         return (<div className="row justify-content-left p-2">
-            <div className='col-2'>
-                <button className="btn" onClick={this.goHome}>Home</button>
+            <div className='col-1'>
+                <button className="btn" onClick={this.changeView} id={0}>Home</button>
             </div>
             { serverButton }
         </div>);
     }
 }
+/*
 
+            <div className='col-1'>
+                <Link to="/about" className="btn">About</Link>
+            </div>
+ */
 export default TitleBar;
