@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import DisplayCPU from "./displaycpu";
 
 class DisplayCPUCounts extends Component {
 

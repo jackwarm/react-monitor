@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import DisplayDiskCounts from "./displaydiskcounts";
-import DisplayDetails from "./displaydetails";
 
 class DisplayDisks extends Component {
 

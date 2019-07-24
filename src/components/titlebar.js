@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class TitleBar extends Component {
     currentServer = {};
@@ -22,6 +22,9 @@ class TitleBar extends Component {
         return (<div className="row justify-content-left p-2">
             <div className='col-1'>
                 <button className="btn" onClick={this.changeView} id={0}>Home</button>
+            </div>
+            <div className='col-1'>
+                <Link to="/about" className="btn">About</Link>
             </div>
             { serverButton }
         </div>);

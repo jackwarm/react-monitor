@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import NumberFormat from 'react-number-format';
-import DisplayMemoryCounts from './displaymemorycounts'
-import DisplaySwapCounts from './displayswapcount'
-import DisplayDetails from "./displaydetails";
+import DisplayMemoryCounts from './displaymemorycounts';
+import DisplaySwapCounts from './displayswapcount';
 
 class DisplayMemory extends Component {
 

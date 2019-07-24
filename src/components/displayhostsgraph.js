@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import DisplayDisks from "./displaydisks";
 
 class DisplayHostsGraph extends Component {
 
